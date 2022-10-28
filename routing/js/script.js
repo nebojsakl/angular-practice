@@ -52,7 +52,7 @@
     .controller("coursesController", function(){
         this.courses = ["Angular", "JAVA", "C#", "Scala"];
     })
-
+    
     .controller("studentsController", function(){
         this.message = ["Ben", "Maya", "Frank", "Lucy"];
     });
