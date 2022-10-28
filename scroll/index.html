@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="demoApp">
+
+<head>
+    <title>Basics of Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-controller="demoController">
+
+    <button id="top" ng-click="scrollTo('bottom')">Go to bottom of the page</button>
+    <br><br>
+    <div>
+        <b>What is Angular?</b>
+        <br>
+        Angular is a JS framework that helps build applications that run in a web.
+        <br><br>
+        <b>Who developed AngularJS?</b>
+        <br>
+        Google is the company that developed AngularJS. AngularJS is an open source project.
+        <br><br>
+        AngularJS is an excellent framework for building both SPA and MPA projects.
+        <br><br>
+        What are the benefits of using AngularJS?
+        Dependency Injection: Something that AngularJS does quite well. 
+        If you are new to Dependency Injection, don't worry.
+        <br><br>
+        <b>What is ng-app?</b>
+        <br>
+        In angular, ng-app is called a directive. There are many directives included in angular.
+        The ng prefix in the directive stands for angular. The ng-app directive is a starting point of AngularJS application.
+        Angular framework will first check for ng-app directive in an HTML page, after
+        the entire page is loaded. If ng-app directive is found, angular boostraps itself starts to manage the section
+        of the page that has the ng-app directive.
+        <br><br>
+        <b>So, the obvious next question is, where to place the ng-app directive on the page?</b>
+        <br>
+        It should be placed at the root of the HTML document, that is at the html tag level or at the body level,
+        so that angular can control the entire page.
+        <br>
+        However, there is nothing stopping you from placing it on any other HTML element within the page.
+        When you do this only, that element and it's children are managed by Angular.
+        <br>
+        Double curly braces are called binding expressions in Angular.
+    </div>
+    <br>
+    <button id="bottom" ng-click="scrollTo('top')">Go to top of the page</button>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> 
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Basics of Angular</title>
+</head>
+
+<body ng-app="demo">
+    <table style="font-family: Arial">
+
+        <tr>
+            <td colspan="2" class="header">
+                <h1>
+                    Website Header
+                </h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="leftMenu">
+                <a href="#/home">Home</a>
+                <a href="#/courses">Courses</a>
+                <a href="#/students">Students</a>
+            </td>
+
+            <td class="mainContent">
+                <ng-view></ng-view>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="footer">
+                <b>Website Footer</b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

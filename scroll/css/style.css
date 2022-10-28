@@ -1,0 +1,11 @@
+body{
+    margin-left: 35%;
+}
+
+div{
+    width: 400px;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: large;
+    padding: 5px;
+}
