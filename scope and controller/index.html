@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+
+<head>
+    <title>Basics of Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <b><u>Nested controller with scope</u></b> 
+    <br><br>
+    <div ng-controller="countryController as countryCtrl">
+        {{countryCtrl.name}}
+        <div ng-controller="stateController as stateCtrl">
+            {{countryCtrl.name}} - {{stateCtrl.name}}
+            <div ng-controller="cityController as cityCtrl">
+                {{countryCtrl.name}} - {{stateCtrl.name}} - {{cityCtrl.name}}
+            </div>   
+        </div>
+    </div>
+
+    <br><br>
+    <b><u>Difference between $scope and $rootScope</u></b>
+    <br><br>
+    <div ng-controller="redController">
+        Root scope color : {{rootScopeColor}} <br>
+        Red color controller : {{red}} <br>
+        Green color controller : 
+            <span style="color:#065939" ng-show="green == undefined">
+                <b>Green color is undefined.</b>
+            </span>
+    </div>
+    <br>
+
+    <div ng-controller="greenController">
+        Root scope color : {{rootScopeColor}} <br>
+        Green color controller : {{green}} <br>
+        Red color controller : 
+            <span style="color:#820900" ng-show="red == undefined">
+                <b>Red color is undefined.</b>
+            </span>
+    </div>
+    <br>
+
+</body>
+</html>
