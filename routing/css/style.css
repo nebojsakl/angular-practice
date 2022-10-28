@@ -32,6 +32,7 @@ a{
     text-decoration: none;
 }
 
-a:visited{
-    color: black;
+.activeState{
+    background-color: black;
+    color: white;
 }
