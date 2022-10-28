@@ -50,9 +50,9 @@
     })
 
     .controller("coursesController", function(){
-        this.courses = ["Angular", "JAVA", "C#", "Scala"];
+        this.course = ["Angular", "JAVA", "C#", "Scala"];
     })
     
     .controller("studentsController", function(){
-        this.message = ["Ben", "Maya", "Frank", "Lucy"];
+        this.student = ["Ben", "Maya", "Frank", "Lucy"];
     });
