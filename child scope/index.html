@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+
+</head>
+
+<body ng-app="app">
+    
+    <div class="container" id="div1" ng-controller="sample">
+        Sample: a = {{ a }}, b = {{ b }} <br><br>
+        a = <input ng-model="a" /> <br><br>
+        Sample: p = {{ o.p }}, b = {{ o.q }} <br><br>
+        p = <input ng-model="o.p" /> <br><br>
+ 
+    <hr>
+
+    <div class="container" id="div2" ng-controller="sample2">
+        First sample:  a = {{ a }}, b = {{ b }} <br><br>
+        a = <input ng-model="a" /> <br><br>
+        Second sample: parent - a : a = {{ $parent.a }} <br><br>
+        Second sample: c = {{ c }}, d = {{ d }} <br><br>
+        Third sample: p = {{ o.p }}, q = {{ o.q }} <br><br>
+        p = <input ng-model="o.p" /> <br><br>
+    </div>
+    </div>
+
+</body>
+</html>

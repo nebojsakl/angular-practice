@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Ben",
+        "gender": "Male",
+        "city": "Washington"
+    },
+
+    {
+        "name": "Lucy",
+        "gender": "Female",
+        "city": "Boston"
+    },
+
+    {
+        "name": "John",
+        "gender": "Male",
+        "city": "Kentucky"
+    },
+
+    {
+        "name": "Drake",
+        "gender": "Male",
+        "city": "New York"
+    },
+
+    {
+        "name": "Elena",
+        "gender": "Female",
+        "city": "Los Angeles"
+    },
+
+    {
+        "name": "Frank",
+        "gender": "Male",
+        "city": "Washington"
+    }
+]
